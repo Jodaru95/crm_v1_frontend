@@ -1,0 +1,182 @@
+<div class="flex h-full flex-col gap-6 p-6">
+
+    <!-- Cabecera -->
+    <div class="flex items-start justify-between">
+        <div>
+            <h1 class="text-2xl font-semibold text-slate-800">
+                Documentación
+            </h1>
+
+            <p class="mt-1 text-sm text-slate-500">
+                Consulta y gestiona la documentación asociada al sistema
+            </p>
+        </div>
+
+        <button mat-flat-button class="!rounded-lg !bg-blue-600 !px-4 !text-white">
+            <mat-icon class="mr-2">
+                upload_file
+            </mat-icon>
+
+            Subir documento
+        </button>
+    </div>
+
+    <!-- Resumen -->
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+
+        <!-- Total documentos -->
+        <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-slate-500">
+                        Total documentos
+                    </p>
+
+                    <p class="mt-2 text-2xl font-semibold text-slate-800">
+                        856
+                    </p>
+                </div>
+
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
+                    <mat-icon>
+                        description
+                    </mat-icon>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documentos recientes -->
+        <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-slate-500">
+                        Añadidos este mes
+                    </p>
+
+                    <p class="mt-2 text-2xl font-semibold text-slate-800">
+                        42
+                    </p>
+                </div>
+
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600">
+                    <mat-icon>
+                        note_add
+                    </mat-icon>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pendientes -->
+        <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-slate-500">
+                        Pendientes de revisión
+                    </p>
+
+                    <p class="mt-2 text-2xl font-semibold text-slate-800">
+                        18
+                    </p>
+                </div>
+
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-amber-50 text-amber-600">
+                    <mat-icon>
+                        pending
+                    </mat-icon>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Categorías -->
+    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+
+        <div class="mb-4">
+            <h2 class="text-sm font-semibold text-slate-800">
+                Categorías
+            </h2>
+
+            <p class="mt-0.5 text-xs text-slate-500">
+                Accede rápidamente a los diferentes tipos de documentación
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+            <!-- Contratos -->
+            <div
+                class="group cursor-pointer rounded-xl border border-slate-200 p-4 transition-colors hover:border-blue-200 hover:bg-blue-50/40">
+                <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
+                    <mat-icon>
+                        article
+                    </mat-icon>
+                </div>
+
+                <h3 class="text-sm font-semibold text-slate-800">
+                    Contratos
+                </h3>
+
+                <p class="mt-1 text-xs text-slate-500">
+                    124 documentos
+                </p>
+            </div>
+
+            <!-- Identificación -->
+            <div
+                class="group cursor-pointer rounded-xl border border-slate-200 p-4 transition-colors hover:border-blue-200 hover:bg-blue-50/40">
+                <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
+                    <mat-icon>
+                        badge
+                    </mat-icon>
+                </div>
+
+                <h3 class="text-sm font-semibold text-slate-800">
+                    Identificación
+                </h3>
+
+                <p class="mt-1 text-xs text-slate-500">
+                    286 documentos
+                </p>
+            </div>
+
+            <!-- Informes -->
+            <div
+                class="group cursor-pointer rounded-xl border border-slate-200 p-4 transition-colors hover:border-blue-200 hover:bg-blue-50/40">
+                <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
+                    <mat-icon>
+                        assessment
+                    </mat-icon>
+                </div>
+
+                <h3 class="text-sm font-semibold text-slate-800">
+                    Informes
+                </h3>
+
+                <p class="mt-1 text-xs text-slate-500">
+                    98 documentos
+                </p>
+            </div>
+
+            <!-- Otros -->
+            <div
+                class="group cursor-pointer rounded-xl border border-slate-200 p-4 transition-colors hover:border-blue-200 hover:bg-blue-50/40">
+                <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-500">
+                    <mat-icon>
+                        folder
+                    </mat-icon>
+                </div>
+
+                <h3 class="text-sm font-semibold text-slate-800">
+                    Otros
+                </h3>
+
+                <p class="mt-1 text-xs text-slate-500">
+                    348 documentos
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</div>

@@ -31,12 +31,20 @@ export const routes: Routes = [
                         m => m.Clients
                     )
             },
-            
+
             {
                 path: 'operations',
                 loadComponent: () =>
                     import('./features/operations/operations').then(
                         m => m.Operations
+                    )
+            },
+
+            {
+                path: 'documentation',
+                loadComponent: () =>
+                    import('./features/documentation/documentation').then(
+                        m => m.Documentation
                     )
             }
 
