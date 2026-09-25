@@ -140,6 +140,77 @@
 
     </div>
 
+    <!-- Gráficos -->
+    <div class="grid grid-cols-1 gap-6 xl:grid-cols-3">
+
+        <!-- Evolución de operaciones -->
+        <mat-card class="xl:col-span-2">
+            <mat-card-content class="!p-0">
+
+                <div class="border-b border-slate-200 px-5 py-4">
+                    <h3 class="font-semibold text-slate-800">
+                        Evolución de operaciones
+                    </h3>
+
+                    <p class="mt-1 text-xs text-slate-500">
+                        Operaciones realizadas durante la última semana
+                    </p>
+                </div>
+
+                <div class="p-5">
+                    <app-operations-chart></app-operations-chart>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+
+        <!-- Operaciones por estado -->
+        <mat-card>
+            <mat-card-content class="!p-0">
+
+                <div class="border-b border-slate-200 px-5 py-4">
+                    <h3 class="font-semibold text-slate-800">
+                        Operaciones por estado
+                    </h3>
+
+                    <p class="mt-1 text-xs text-slate-500">
+                        Distribución actual de las operaciones
+                    </p>
+                </div>
+
+                <div class="p-5">
+                    <app-operations-status-chart></app-operations-status-chart>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+    <!-- Operaciones por tipo -->
+    <div class="mt-6">
+
+        <mat-card>
+            <mat-card-content class="!p-0">
+
+                <div class="border-b border-slate-200 px-5 py-4">
+                    <h3 class="font-semibold text-slate-800">
+                        Operaciones por tipo
+                    </h3>
+
+                    <p class="mt-1 text-xs text-slate-500">
+                        Distribución de operaciones según su tipo
+                    </p>
+                </div>
+
+                <div class="p-5">
+                    <app-operations-type-chart></app-operations-type-chart>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+
     <!-- Información reciente -->
     <div class="grid grid-cols-1 gap-6 xl:grid-cols-3">
 

@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 
+import { OperationsChart } from './components/operations-chart/operations-chart';
+import { OperationsStatusChart } from './components/operations-status-chart/operations-status-chart';
+import { OperationsTypeChart } from './components/operations-type-chart/operations-type-chart';
+
 interface RecentClient {
   name: string;
   type: string;
@@ -20,7 +24,10 @@ interface RecentActivity {
   selector: 'app-dashboard',
   imports: [
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    OperationsChart,
+    OperationsStatusChart,
+    OperationsTypeChart
   ],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.scss'
