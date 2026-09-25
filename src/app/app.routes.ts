@@ -30,6 +30,14 @@ export const routes: Routes = [
                     import('./features/clients/clients').then(
                         m => m.Clients
                     )
+            },
+            
+            {
+                path: 'operations',
+                loadComponent: () =>
+                    import('./features/operations/operations').then(
+                        m => m.Operations
+                    )
             }
 
         ]
