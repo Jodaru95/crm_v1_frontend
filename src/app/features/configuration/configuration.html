@@ -1,0 +1,218 @@
+<div class="flex h-full flex-col gap-6 p-6">
+
+    <!-- Cabecera -->
+    <div>
+        <h1 class="text-2xl font-semibold text-slate-800">
+            Configuración
+        </h1>
+
+        <p class="mt-1 text-sm text-slate-500">
+            Configura las preferencias y opciones del sistema
+        </p>
+    </div>
+
+    <!-- Preferencias de usuario -->
+    <div class="rounded-xl border border-slate-200 bg-white shadow-sm">
+
+        <div class="border-b border-slate-200 px-5 py-4">
+            <h2 class="text-sm font-semibold text-slate-800">
+                Preferencias de usuario
+            </h2>
+
+            <p class="mt-0.5 text-xs text-slate-500">
+                Personaliza tu experiencia dentro del CRM
+            </p>
+        </div>
+
+        <div class="divide-y divide-slate-100">
+
+            <!-- Tema -->
+            <div class="flex items-center justify-between px-5 py-4">
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600"
+                    >
+                        <mat-icon>
+                            palette
+                        </mat-icon>
+                    </div>
+
+                    <div>
+                        <p class="text-sm font-medium text-slate-800">
+                            Apariencia
+                        </p>
+
+                        <p class="mt-0.5 text-xs text-slate-500">
+                            Personaliza el tema visual de la aplicación
+                        </p>
+                    </div>
+
+                </div>
+
+                <button
+                    mat-button
+                    class="!rounded-lg !text-slate-600"
+                >
+                    Tema claro
+                    <mat-icon class="ml-1">
+                        expand_more
+                    </mat-icon>
+                </button>
+            </div>
+
+            <!-- Notificaciones -->
+            <div class="flex items-center justify-between px-5 py-4">
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-500"
+                    >
+                        <mat-icon>
+                            notifications_none
+                        </mat-icon>
+                    </div>
+
+                    <div>
+                        <p class="text-sm font-medium text-slate-800">
+                            Notificaciones
+                        </p>
+
+                        <p class="mt-0.5 text-xs text-slate-500">
+                            Gestiona las notificaciones que recibes
+                        </p>
+                    </div>
+
+                </div>
+
+                <button
+                    mat-button
+                    class="!rounded-lg !text-slate-600"
+                >
+                    Configurar
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Configuración del sistema -->
+    <div class="rounded-xl border border-slate-200 bg-white shadow-sm">
+
+        <div class="border-b border-slate-200 px-5 py-4">
+            <h2 class="text-sm font-semibold text-slate-800">
+                Configuración del sistema
+            </h2>
+
+            <p class="mt-0.5 text-xs text-slate-500">
+                Opciones generales de funcionamiento
+            </p>
+        </div>
+
+        <div class="divide-y divide-slate-100">
+
+            <!-- Información general -->
+            <div class="flex items-center justify-between px-5 py-4">
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-500"
+                    >
+                        <mat-icon>
+                            business
+                        </mat-icon>
+                    </div>
+
+                    <div>
+                        <p class="text-sm font-medium text-slate-800">
+                            Información de la aplicación
+                        </p>
+
+                        <p class="mt-0.5 text-xs text-slate-500">
+                            Consulta información y versión del sistema
+                        </p>
+                    </div>
+
+                </div>
+
+                <span
+                    class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-500"
+                >
+                    v1.0.0
+                </span>
+            </div>
+
+            <!-- Seguridad -->
+            <div class="flex items-center justify-between px-5 py-4">
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-500"
+                    >
+                        <mat-icon>
+                            security
+                        </mat-icon>
+                    </div>
+
+                    <div>
+                        <p class="text-sm font-medium text-slate-800">
+                            Seguridad
+                        </p>
+
+                        <p class="mt-0.5 text-xs text-slate-500">
+                            Opciones relacionadas con seguridad y acceso
+                        </p>
+                    </div>
+
+                </div>
+
+                <button
+                    mat-button
+                    class="!rounded-lg !text-slate-600"
+                >
+                    Gestionar
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Información de sesión -->
+    <div class="rounded-xl border border-slate-200 bg-white shadow-sm">
+
+        <div class="border-b border-slate-200 px-5 py-4">
+            <h2 class="text-sm font-semibold text-slate-800">
+                Sesión actual
+            </h2>
+
+            <p class="mt-0.5 text-xs text-slate-500">
+                Información del usuario conectado
+            </p>
+        </div>
+
+        <div class="px-5 py-4">
+
+            <div class="flex items-center gap-4">
+
+                <div
+                    class="flex h-11 w-11 items-center justify-center rounded-full bg-blue-50 text-sm font-semibold text-blue-700 ring-1 ring-blue-100"
+                >
+                    JD
+                </div>
+
+                <div>
+                    <p class="text-sm font-medium text-slate-800">
+                        John Doe
+                    </p>
+
+                    <p class="text-xs text-slate-500">
+                        Gestor · Sesión activa
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
